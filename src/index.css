@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+input[type=text], input[type=password] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0a0a0a;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.loginbutton{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  position: absolute;
+  left: 100px;
+}
+
+.loginbody{
+  position: absolute;
+  top: 230px;
+  left: 600px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 572px;
+    width: 479px;
+    border: 1px solid rgb(2, 2, 9);
+    margin: auto;
+    background-color: rgb(243, 241, 241);
+    position: absolute;
+    top: 89px;
+    left: 500px;
+}
+
+header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.footer {
+width: 100px;
+height: 50px;
+  padding: 0.25em;
+  background-color: #050505;
+  color: white;
+  display: grid;
+  place-content: center;
+  border-radius: 9px;
+  font-size: 15px;
+  margin-bottom: 10px
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+}
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus, 
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  /* height: 25px; */
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.headerlogin {
+  position: absolute;
+  top: 185px;
+  left: 600px;
+ 
+cursor: pointer;
+ margin: 0 4px;
+border-radius: 20px; 
+color: yellow;
+text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+0% {
+filter: hue-rotate(0deg) ;
+}
+100%{
+filter: hue-rotate(360deg)  ;
+}
+}
